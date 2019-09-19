@@ -1,0 +1,6 @@
+[submodule "Assets/unityvr_r-and-d"]
+	path = Assets/unityvr_r-and-d
+	url = https://github.com/sachslab/unityvr_r-and-d.git
+[submodule "Assets/lsl4unity"]
+	path = Assets/lsl4unity
+	url = https://github.com/xfleckx/lsl4unity
