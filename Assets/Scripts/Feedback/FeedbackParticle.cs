@@ -14,17 +14,18 @@ public class FeedbackParticle : FeedbackModality
 	{
 		try 
 		{
-			Vector3 objPosition = this.gameObject.transform.position;
+			//Vector3 objPosition = this.gameObject.transform.position;
+            Vector3 center = new Vector3(0.0f, 1.0f, 1.1f);
 			if (!result) 
 			{
-				particleWrong.transform.position = objPosition;
+                particleWrong.transform.position = center;
 				particleWrong.Play();
 			}
 			// TODO: Animate 300/100/50 grades
 			if (time < scoreExcellent && result)
-			{    
-				// Excellent! (Green)
-				particleExcellent.transform.position = objPosition;
+			{
+                // Excellent! (Green)
+                particleExcellent.transform.position = center;// objPosition;
 				particleExcellent.Play();
 			}
 		}
